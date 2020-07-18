@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+#section-all{
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+  max-width: 1250px;
+}
+@font-face {
+  font-family: "chompsky";
+  src: url(./fonts/Chomsky.woff);
+}
+
+/* PART-1******************** */
+/* LOGO */
+.div1 {
+  text-align: center;
+}
+.div1 img {
+  /* width: 30rem; */
+  width: 35vw;
+}
+.hr1 {
+  border: 0;
+  border-bottom: 1px solid #ededed;
+}
+/* *****LOGO ENDS***** */
+/* NAV LARGE*/
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 3px;
+}
+nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 2px 7px;
+  border-radius: 8%;
+  transition: 0.4s;
+}
+.active,
+a:hover {
+  background-color: #f7f7f7;
+}
+.hr2 {
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 1px 10px #333;
+}
+/* *****NAV LARGE ENDS***** */
+/* HAM ICON (TO OPEN SN)  */
+.nav-data {
+  height: 40px;
+  display: none;
+  /* remains hidden in desktop mode*/
+}
+.ham {
+  line-height: 40px;
+  float: left;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.nav-data-inner {
+  display: flex;
+}
+.nav-data-inner div {
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 40px;
+  text-align: center;
+}
+.sticky2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0px 1px 10px #333;
+}
+@media (max-width: 1230px) {
+  nav {
+    /* large nav tab dissapears from tablet mode*/
+    display: none;
+  }
+
+  .nav-data {
+    display: block;
+    background-color: white;
+  }
+
+  @media (max-width: 850px) {
+    .nav-data {
+      border-right: none;
+      border-left: none;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      background-color: #f7f7f7;
+    }
+
+    .hr2 {
+      border: none;
+    }
+  }
+}
+
+/* *****HAM ICON ENDS (TO OPEN SN)***** */
+/* SIDE NAV */
+.sidenav {
+  /* side menu format designed here */
+  box-shadow: 0px 1px 10px #333;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.sidenav a {
+  font-family: "Roboto", sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: black;
+  font-weight: bold;
+  display: block;
+  transition: 0.3s;
+}
+.cross {
+  text-align: right;
+}
+.cross i {
+  padding: 10px 20px;
+}
+/* *****SIDE NAV ENDS***** */
+/* BOTTOM NAV SECTION */
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.bn img {
+  float: left;
+  padding-right: 15px;
+}
+.bn h4 {
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* font-family: "roboto", sans-serif; */
+}
+.bn p {
+  text-align: left;
+  padding-top: 3px;
+  font-size: 0.95rem;
+  font-family: "chompsky";
+  color: grey;
+}
+.hr3 {
+  border-top: 3px double black;
+}
+@media (max-width: 1100px) {
+  .bn:nth-child(4) {
+    display: none;
+  }
+
+  @media (max-width: 850px) {
+    .bottom-nav {
+      display: none;
+    }
+
+    .hr3 {
+      border: none;
+    }
+  }
+}
+/* *****BOTTOM NAV SECTION ENDS***** */
+/* PART-1 ENDS******************** */
+
+/* PART-2 ******************** */
+/* section-2 */
+#section-2 {
+  margin-top: 18px;
+}
+@media (max-width: 1230px) {
+  #section-2, #section-3, #section-4, #section-5, #section-6, #section-7 {
+    margin: 15px;
+  }
+}
+@keyframes flicker {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  49% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: black;
+    color: white;
+  }
+  99% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+.s2-1a {
+  text-align: center;
+  background-color: black;
+  height: 60px;
+  margin: 0px 10px 2px 0px;
+  float: left;
+}
+.s2-1a p {
+  padding: 0;
+  line-height: 60px;
+  width: 280px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  animation: flicker 1.5s infinite;
+}
+@media (max-width: 850px) {
+  .s2-1a {
+    height: 40px;
+    margin: 0px 10px 0px 0px;
+  }
+  .s2-1a p {
+    line-height: 40px;
+    width: 200px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+.s2-1b p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+.s2-2 {
+  text-align: center;
+  margin-top: 15px;
+}
+.s2-2 p {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 8vw;
+  font-weight: bolder;
+  word-spacing: 2.8vw;
+  letter-spacing: 0.7vw;
+  line-height: 8vw;
+}
+/* *****section-2 ends***** */
+/* section-3 */
+.s3-1{
+  display: none;
+}
+.s3-1c{
+  text-align: center;
+}
+.s3-1a p,
+.s3-1b p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+.s3-1c img {
+  width: 39rem;
+}
+.s3-x1 p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+.s3-x1 img{
+  width: 50vw;
+  float: right;
+  margin: 0 0 10px 20px;
+}
+@media (max-width: 800px){
+  /* <800 trans mode off */
+  .s3-x1{
+    display: none;
+  }
+  /* <800 og mode on */
+  .s3-1{
+    display: block;
+  }
+  .s3-1c img {
+    width: 75vw;
+    margin: 0 0 5px 20px;
+  }
+    /* adjust og in <800 */
+  @media (max-width: 500px){
+    .s3-1c img {
+      width: 90vw;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 1230px){
+    /* >1220 trans mode off */
+  .s3-x1{
+    display: none;
+  }
+      /* >1220 og has flex */
+  .s3-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .s3-1a{
+    width: 23%;
+  }
+  .s3-1b{
+    width: 23%;
+  }
+  .s3-1c{
+    width: 50%;
+  }
+}
+/* *****section-3` ends***** */
+/* PART-2 ENDS******************** */
+
+/* PART-3 ******************** */
+#section-4{
+  margin-top: 15px;
+}
+/* *****section-left***** */
+.s4-1{
+  justify-content: space-between;
+}
+.s4-1a{
+  flex-basis: 69%;
+}
+.s4-1a-1{
+  text-align: center;
+}
+.s4-1a-1 p{
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-weight: bolder;
+  word-spacing: 1vw;
+  letter-spacing: 0.4vw;
+  line-height: 4.5vw;
+}
+.s4-1a-2 p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+/* *****section-left ends***** */
+.s4-1b{
+  flex-basis: 30%;
+}
+.s4-1b-1{
+  text-transform: uppercase;
+}
+.s4-1b-1 p:nth-child(1){
+  text-align: center;
+  font-size: 2.2vw;
+  font-weight: 900;
+}
+.s4-1b-1 p:nth-child(2){
+  text-align: center;
+  font-size: 1.5vw;
+  word-spacing: 2.2vw;
+  letter-spacing: 0.5vw;
+}
+.s4-1b-1 p:nth-child(3){
+  text-align: center;
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+.s4-1b-2 p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+
+@media (max-width: 800px){
+  .s4-1b-1 p{
+    display: inline-block;
+  }
+  .s4-1b-1 p:nth-child(1),
+  .s4-1b-1 p:nth-child(2),
+  .s4-1b-1 p:nth-child(3){
+    font-size: 2.9vw;
+    font-weight: bold;
+    word-spacing: 1vw;
+    letter-spacing: normal;
+    margin: 0 1vw;
+  }
+  @media (max-width: 675px){
+    .s4-1b-1{
+      text-align: center;
+    }
+    .s4-1b-1 p:nth-child(1),
+    .s4-1b-1 p:nth-child(2),
+    .s4-1b-1 p:nth-child(3){
+     font-size: 1.5rem;
+     font-weight: bold;
+     word-spacing: 1vw;
+     letter-spacing: normal;
+     margin: 0 1vw;
+  }
+  }
+}
+@media (min-width: 800px){
+  .s4-1{
+    display: flex;
+  }
+}
+/* PART-3 ENDS ******************** */
+
+/* PART-4 ******************** */
+#section-5{
+  margin-top: 15px;
+}
+
+@media (min-width: 1000px){
+  .s5-1{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.s5-1a{
+  flex-basis: 65%;
+}
+.s5-1b{
+  flex-basis: 34%;
+}
+.s5-1a-1 div{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.2vw;
+}
+.s5-1a-1 img{
+  padding-right: 8px;
+  float: left;
+  filter: grayscale(100%);
+}
+.s5-1a-2 img{
+  padding-left: 8px;
+  float: right;
+  filter: grayscale(100%);
+}
+
+.s5-1a-1 p,
+.s5-1a-2 p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+/* right side */
+.s5-1b-1 p:nth-child(1){
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 900;
+}
+.s5-1b-1 p:nth-child(2){
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1vw;
+  font-size: 2vw;
+}
+.s5-1b-1 p:nth-child(3){
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-weight: 900;
+}
+.s5-1b-2 p{
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+@media (max-width: 1000px){
+  .s5-1a-2 img{
+    padding-left: 0;
+    padding-right: 8px;
+    float: left;
+  }
+  .s5-1a-1 img,
+  .s5-1a-2 img{
+    width: 15rem;
+  }
+  .s5-1b{
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 945px){
+    .s5-1b{
+      margin-top: 25px;
+    }
+  }
+  .s5-1b-1{
+    text-align: center;
+  }
+  .s5-1b-1 p{
+    display: inline-block;
+    font-size: 5vw;
+  }
+  .s5-1b-1 p:nth-child(1),
+  .s5-1b-1 p:nth-child(2),
+  .s5-1b-1 p:nth-child(3){
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    font-size: 4vw;
+    font-weight: 900;
+    word-spacing: 1vw;
+    margin: 0 1vw;
+  }
+  @media (max-width: 600px){
+    .s5-1a-1 img,
+    .s5-1a-2 img{
+      padding: 0;
+      float: none;
+      width: 70vw;
+    }
+    .s5-1a-1,
+    .s5-1a-2{
+      text-align: center;
+    }
+    .s5-1a-1 div{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 5.4vw;
+    }
+    .s5-1b{
+      margin-top: 20px;
+    }
+    .s5-1b-1 p:nth-child(1),
+    .s5-1b-1 p:nth-child(2),
+    .s5-1b-1 p:nth-child(3){
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.3vw;
+     font-size: 5.4vw;
+     font-weight: 900;
+     word-spacing: 1vw;
+     margin: 0 1vw;
+   }
+  }
+}
+/* PART-4 ENDS ******************** */
+/* PART-5 ******************** */
+.s6-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.s6-1a,
+.s6-1b,
+.s6-1c,
+.s6-1d{
+  width:  300px;
+  height: 300px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.s6-1a p:nth-child(1),
+.s6-1b p:nth-child(1),
+.s6-1c p:nth-child(1),
+.s6-1d p:nth-child(1){
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.s6-1a p:nth-child(2),
+.s6-1b p:nth-child(2),
+.s6-1c p:nth-child(2),
+.s6-1d p:nth-child(2){
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "chompsky";
+  font-size: 1.2rem;
+  color: #595959;
+}
+.s6-1a a,
+.s6-1b a,
+.s6-1c a,
+.s6-1d a{
+  font-family: serif;
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* PART-5 ENDS ******************** */
+
+/* PART-6 ******************** */
+#section-7{
+  margin-top: 15px;
+}
+.s7-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.s7-1 > div{
+  width: 200px;
+}
+.s7-1a p:nth-child(1),
+.s7-1b p:nth-child(1),
+.s7-1c p:nth-child(1),
+.s7-1d p:nth-child(1),
+.s7-1e p:nth-child(1),
+.s7-1f p:nth-child(1){
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.s7-1a p:nth-child(2),
+.s7-1b p:nth-child(2),
+.s7-1c p:nth-child(2),
+.s7-1d p:nth-child(2),
+.s7-1e p:nth-child(2),
+.s7-1f p:nth-child(2){
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.s7-1a p:nth-child(3),
+.s7-1b p:nth-child(3),
+.s7-1c p:nth-child(3),
+.s7-1d p:nth-child(3),
+.s7-1e p:nth-child(3),
+.s7-1f p:nth-child(3){
+  text-align: justify;
+  text-justify: newspaper;
+  font-family: "chompsky";
+  font-size: 1rem;
+  color: #595959;
+}
+.s7-1a a,
+.s7-1b a,
+.s7-1c a,
+.s7-1d a,
+.s7-1e a,
+.s7-1f a{
+  font-family: serif;
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hr4 {
+  border-top: 3px double black;
+  margin: 20px 0;
+}
+/* PART-6 ENDS ******************** */
+
+/* PART-7 ******************** */
+.s8-1{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.s8-1 p{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  font-size: 1rem;
+}
+@media (max-width: 900px){
+  .s8-1 p{
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-size: 0.8rem;
+  }
+  @media (max-width: 650px){
+    .s8-1 p{
+      font-size: 0.6rem;
+    }
+  }
+  @media (max-width: 540px){
+    .s8-1 p{
+      font-size: 0.5rem;
+    }
+  }
+}
+/* PART-7 ENDS ******************** */
