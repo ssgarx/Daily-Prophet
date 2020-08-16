@@ -1,0 +1,43 @@
+.nav2 {
+  height: 40px;
+  display: none; //remains hidden in desktop mode
+  z-index: 2;
+  //HAM ICON
+  .ham {
+    line-height: 40px;
+    float: left;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .nav2a {
+    display: flex;
+    div {
+      flex: 1;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.8rem;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .nav2 {
+    display: block;
+    background-color: white;
+  }
+
+  @media (max-width: 850px) {
+    .nav2 {
+      border-right: none;
+      border-left: none;
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      background-color: #f7f7f7;
+    }
+
+    .hr2 {
+      border: none;
+    }
+  }
+}

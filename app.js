@@ -8,9 +8,9 @@ function closeSideNav() {
 // *****SIDE NAV ENDS*****
 
 //UPON SCROLL TRIGGER FUNCTION
-window.onscroll = function () {
+window.onscroll = function(){
   addSticky();
-};
+}
 
 //GET NAV1
 var nav1 = document.getElementById("navbar");
@@ -23,19 +23,19 @@ var nav2 = document.getElementById("navbar2");
 // console.log("n1o: "+n1o+" , "+"n2o: "+n2o);
 
 //APPLY STICKY
-function addSticky() {
+function addSticky(){
   var ss = window.innerWidth;
   if (ss >= 1230) {
-    if (window.pageYOffset >= 124) {
+    if ( window.pageYOffset >= 124 ) {
       nav1.classList.add("sticky");
     } else {
       nav1.classList.remove("sticky");
     }
   } else {
-    if (window.pageYOffset >= 66) {
-      nav2.classList.add("sticky2");
+    if ( window.pageYOffset >= 66 ) {
+      nav2.classList.add("sticky");
     } else {
-      nav2.classList.remove("sticky2");
+      nav2.classList.remove("sticky");
     }
   }
 }

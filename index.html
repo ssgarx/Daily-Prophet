@@ -7,15 +7,13 @@
     <title>The Daily Prophet</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./fav/favicon.ico" type="image/x-icon">
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/f8d3828943.js" crossorigin="anonymous"></script>
     <!-- FONT -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/chomsky" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body onresize="addSticky()">
@@ -24,10 +22,9 @@
         <img src="./images/LOGO1.png" alt="The Daily Prophet" />
     </div>
     <hr class="hr1" />
-    <!-- *****LOGO ENDS*****-->
 
-    <!-- NAV LARGE-->
-    <nav id="navbar">
+    <!-- NAVBAR /1 -->
+    <nav id="navbar" class="nav">
         <ul>
             <li><a href="#">World</a></li>
             <li><a href="#">India</a></li>
@@ -51,14 +48,14 @@
         </ul>
         <hr class="hr2" />
     </nav>
-    <!-- *****NAV LARGE ENDS***** -->
 
-    <!-- HAM ICON (TO OPEN SN) -->
-    <div id="navbar2" class="nav-data">
+    <!-- NAVBAR2 -->
+    <div id="navbar2" class="nav2">
+        <!-- HAM ICON -->
         <label class="ham" onclick="openSideNav()">
             <i class="fas fa-bars fa-lg"></i>
         </label>
-        <div class="nav-data-inner">
+        <div class="nav2a">
             <div class="fday">
                 Temperature
             </div>
@@ -71,337 +68,362 @@
         </div>
         <hr class="hr2" />
     </div>
-    <!-- *****HAM ICON ENDS (TO OPEN SN)***** -->
+
+    <!-- SECTION ALL -->
     <section id="section-all">
-    <!-- PART-1******************** -->
-    <section id="section-1">
-        <!-- SIDE NAV -->
-        <div class="sidenav" id="mySidenav">
-            <a class="cross"><i class="fas fa-times fa-lg" onclick="closeSideNav()"></i></a>
-            <a href="#">World</a>
-            <a href="#">India</a>
-            <a href="#">Politics</a>
-            <a href="#">Mumbai</a>
-            <a href="#">Business</a>
-            <a href="#">Opinion</a>
-            <a href="#">Tech</a>
-            <a href="#">Science</a>
-            <a href="#">Health</a>
-            <a href="#">Sports</a>
-            <a href="#">Arts</a>
-            <a href="#">Books</a>
-            <a href="#">Style</a>
-            <a href="#">Food</a>
-            <a href="#">Travel</a>
-            <a href="#">Magazine</a>
-            <a href="#">T Magazine</a>
-            <a href="#">Real Estate</a>
-            <a href="#">Video</a>
-        </div>
-        <!-- *****SIDE NAV ENDS***** -->
 
-        <!-- BOTTOM NAV SECTION -->
-        <div class="bottom-nav">
-            <div class="bn">
-                <div>
-                    <img src="./images/Rectangle 1.jpg" alt="" />
-                    <h4>Grindelwald arrested.</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+        <section id="section-1">
+            <!-- SIDE NAV -->
+            <div class="sidenav" id="mySidenav">
+                <a class="cross"><i class="fas fa-times fa-lg" onclick="closeSideNav()"></i></a>
+                <a href="#">World</a>
+                <a href="#">India</a>
+                <a href="#">Politics</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Business</a>
+                <a href="#">Opinion</a>
+                <a href="#">Tech</a>
+                <a href="#">Science</a>
+                <a href="#">Health</a>
+                <a href="#">Sports</a>
+                <a href="#">Arts</a>
+                <a href="#">Books</a>
+                <a href="#">Style</a>
+                <a href="#">Food</a>
+                <a href="#">Travel</a>
+                <a href="#">Magazine</a>
+                <a href="#">T Magazine</a>
+                <a href="#">Real Estate</a>
+                <a href="#">Video</a>
             </div>
-            <div class="bn">
-                <div>
-                    <img src="./images/Rectangle 2.jpg" alt="" />
-                    <h4>Legislation under effect.</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="bn">
-                <div>
-                    <img src="./images/Rectangle 3.jpg" alt="" />
-                    <h4>The mysterious which.</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="bn">
-                <div>
-                    <img src="./images/Rectangle 4.jpg" alt="" />
-                    <h4>Old wands to be updated.</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-        <hr class="hr3" />
-        <!-- *****BOTTOM NAV SECTION ENDS***** -->
-    </section>
-    <!-- PART-1 ENDS*************** -->
 
-    <!-- *PART-2******************* -->
-    <!-- section-2 -->
-    <section id="section-2">
-        <div class="s2-1">
-            <div class="s2-1a">
-                <p>exclusive</p>
+            <!-- BOTTOM NAV SECTION -->
+            <div class="bottom-nav">
+                <div class="bn">
+                    <div>
+                        <img src="./images/Rectangle 1.jpg" alt="" />
+                        <h4>Grindelwald arrested.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="bn">
+                    <div>
+                        <img src="./images/Rectangle 2.jpg" alt="" />
+                        <h4>Legislation under effect.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="bn">
+                    <div>
+                        <img src="./images/Rectangle 3.jpg" alt="" />
+                        <h4>The mysterious which.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="bn">
+                    <div>
+                        <img src="./images/Rectangle 4.jpg" alt="" />
+                        <h4>Old wands to be updated.</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
             </div>
-            <div class="s2-1b">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum non esse natus voluptas sapiente
-                    enim, quisquam an e beatae ipsam neque, architecto, laborum nisi? Culpa consequuntur laborum ipsa
-                    repellendus dolorum ipsum dolores ing inventore saepe cumque excepturi. In eaque rerum provident
-                    animi,
-                    iure voluptatem vel modi! Excepturi laudantiumi.</p>
-            </div>
-        </div>
-        <div class="s2-2">
-            <p>boy who lived</p>
-        </div>
-    </section>
-    <!-- section-2 ends************ -->
+            <hr class="hr3" />
+        </section>
 
-    <!-- section-3 -->
-    <section id="section-3">
-        <!-- og mode -->
-        <div class="s3-1">
-            <div class="s3-1a">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
-                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
-                    asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Rerum similique eligendi nemo, autem
-                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
-                    velit.</p>
+        <!-- section-2 -->
+        <section id="section-2">
+            <div class="s2-1">
+                <div class="s2-1a">
+                    <p>exclusive</p>
+                </div>
+                <div class="s2-1b">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum non esse natus voluptas sapiente
+                        enim, quisquam an e beatae ipsam neque, architecto, laborum nisi? Culpa consequuntur laborum
+                        ipsa
+                        repellendus dolorum ipsum dolores ing inventore saepe cumque excepturi. In eaque rerum provident
+                        animi,
+                        iure voluptatem vel modi! Excepturi laudantiumi.</p>
+                </div>
             </div>
-            <div class="s3-1b">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
-                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
-                    asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Rerum similique eligendi nemo, autem
-                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
-                    velit.</p>
+            <div class="s2-2">
+                <p>boy who lived</p>
             </div>
-            <div class="s3-1c">
+        </section>
+
+        <!-- section-3 -->
+        <section id="section-3">
+            <!-- og mode -->
+            <div class="s3-1">
+                <div class="s3-1a">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
+                        veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam.
+                        Explicabo,
+                        voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
+                        asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum similique eligendi nemo, autem
+                        veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam.
+                        Explicabo,
+                        voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
+                        velit.</p>
+                </div>
+                <div class="s3-1b">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
+                        veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam.
+                        Explicabo,
+                        voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
+                        asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rerum similique eligendi nemo, autem
+                        veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam.
+                        Explicabo,
+                        voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
+                        velit.</p>
+                </div>
+                <div class="s3-1c">
+                    <img src="./images/harryImg.png" alt="">
+                </div>
+            </div>
+            <!-- trans mode -->
+            <div class="s3-x1">
                 <img src="./images/harryImg.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
+                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
+                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
+                    asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rerum similique eligendi nemo, autem
+                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
+                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
+                    velit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
+                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
+                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
+                    asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Rerum similique eligendi nemo, autem
+                    veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
+                    voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum
+                    velit.
+                </p>
             </div>
-        </div>
-        <!-- trans mode -->
-        <div class="s3-x1">
-            <img src="./images/harryImg.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
-                veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
-                asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Rerum similique eligendi nemo, autem
-                veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum velit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique eligendi nemo, autem
-                veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit eos cumque. Vel quos quae
-                asperiores neque explicabo natus id libero ducimus amet.Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Rerum similique eligendi nemo, autem
-                veritatis blanditiis quia perferendis a porro sed aut quod et ut officiis, eveniet totam. Explicabo,
-                voluptate? Vero deserunt culpa amet nemo reprehenderit illum velit amet nemo reprehenderit illum velit.
-            </p>
-        </div>
-    </section>
-    <!-- section-3 ends************ -->
-    <!-- PART-2 ENDS*************** -->
+        </section>
 
-    <!-- PART-3******************** -->
-    <section id="section-4">
-        <div class="s4-1">
-            <!-- *****section-left***** -->
-            <div class="s4-1a">
-                <div class="s4-1a-1">
-                    <p>nothing to fear</p>
-                </div>
-                <div class="s4-1a-2">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus laboriosam, molestias
-                        sint dolores, quis sit quod qui dignissimos ad in et praesentium! Perferendis tempore deserunt
-                        expedita, aspernatur reprehenderit id unde beatae temporibus velit soluta explicabo? A,
-                        distinctio vel blanditiis aperiam sequi consequatur corporis, consectetur asperiores explicabo
-                        ipsam suscipit quo laboriosam accusantium accusamus perspiciatis minus! Eligendi, delectus, sit
-                        corrupti minus ad nobis iure aspernatur ducimus perferendis fugit tenetur aliquid error saepe
-                        dolores dolorem eius accusantium optio ex accusamus distinctio consectetur! Recusandae eius,
-                        magni eveniet deserunt omnis saepe libero pariatur expedita eligendi a quas explicabo provident
-                        dolore? Quae dolorem laborum distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Asperiores necessitatibus accusantium explicabo incidunt quo sed corrupti omnis eveniet
-                        accusamus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti
-                        perferendis corporis? Suscipit doloremque explicabo, a atque corrupti voluptate distinctio
-                        soluta
-                        elit soluta.</p>
-                </div>
-            </div>
-            <!-- *****section-left ends***** -->
-            <div class="s4-1b">
-                <div class="s4-1b-1">
-                    <p>madam marchbank</p>
-                    <p>denies links to </p>
-                    <p>goblin groups</p>
-                </div>
-                <div class="s4-1b-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam, quo quibusdam fuga
-                        explicabo incidunt sapiente deleniti, adipisci culpa nostrum eaque, ab repellendus error
-                        laudantium dicta assumenda officia maxime! Et, reiciendis quos praesentium molestiae dolor cum
-                        aliquid animi quibusdam ipsam, facere explicabo corrupti natus, illo unde culpa molestias
-                        excepturi quia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- PART-3 ENDS*************** -->
+        <section id="section-4">
+            <div class="s4-1">
 
-    <!-- PART-4******************** -->
-    <section id="section-5">
-        <div class="s5-1">
-            <!-- left side -->
-            <div class="s5-1a">
-                <div class="s5-1a-1">
-                    <div>great Hall gets a makeover</div>
-                    <img src="./images/hall1.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores dolorum iste asperiores
-                        accusamus, velit tempore expedita hic amet omnis. Perferendis minima illo quaerat adipisci
-                        voluptates quae ipsam, laudantium itaque provident, cum ab, eius unde nemo aut dolorum. Magni
-                        sunt sed ad quisquam pariatur dolore, nam sequi accusamus quasi placeat voluptate eos omnis eius
-                        aut explicabo provident illum dolorem. Doloremque optio eos eaque, enim cupiditate doloribus!
-                        Veritatis quidem doloribus, recusandae illo autem maiores optio dignissimos dicta provident
-                        voluptatum sapiente modi nobis itaque veniam repudiandae. Perferendis expedita ab officiis, non
-                        rem.</p>
+                <div class="s4-1a">
+                    <div class="s4-1a-1">
+                        <p>nothing to fear</p>
+                    </div>
+                    <div class="s4-1a-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo temporibus laboriosam,
+                            molestias
+                            sint dolores, quis sit quod qui dignissimos ad in et praesentium! Perferendis tempore
+                            deserunt
+                            expedita, aspernatur reprehenderit id unde beatae temporibus velit soluta explicabo? A,
+                            distinctio vel blanditiis aperiam sequi consequatur corporis, consectetur asperiores
+                            explicabo
+                            ipsam suscipit quo laboriosam accusantium accusamus perspiciatis minus! Eligendi, delectus,
+                            sit
+                            corrupti minus ad nobis iure aspernatur ducimus perferendis fugit tenetur aliquid error
+                            saepe
+                            dolores dolorem eius accusantium optio ex accusamus distinctio consectetur! Recusandae eius,
+                            magni eveniet deserunt omnis saepe libero pariatur expedita eligendi a quas explicabo
+                            provident
+                            dolore? Quae dolorem laborum distinctio! Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Asperiores necessitatibus accusantium explicabo incidunt quo sed corrupti omnis
+                            eveniet
+                            accusamus doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+                            deleniti
+                            perferendis corporis? Suscipit doloremque explicabo, a atque corrupti voluptate distinctio
+                            soluta
+                            elit soluta.</p>
+                    </div>
                 </div>
-                <div class="s5-1a-2">
-                    <img src="./images/hall2.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores dolorum iste asperiores
-                        accusamus, velit tempore expedita hic amet omnis. Perferendis minima illo quaerat adipisci
-                        voluptates quae ipsam, laudantium itaque provident, cum ab, eius unde nemo aut dolorum. Magni
-                        sunt sed ad quisquam pariatur dolore, nam sequi accusamus quasi placeat voluptate eos omnis eius
-                        aut explicabo provident illum dolorem. Doloremque optio eos eaque, enim cupiditate doloribus!
-                        Veritatis quidem doloribus, recusandae illo autem maiores optio dignissimos dicta provident
-                        voluptatum sapiente modi nobis itaque veniam repudiandae. Perferendis expedita ab officiis, non
-                        rem.</p>
+                <div class="s4-1b">
+                    <div class="s4-1b-1">
+                        <p>madam marchbank denies links to goblin groups</p>
+                    </div>
+                    <div class="s4-1b-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam, quo quibusdam fuga
+                            explicabo incidunt sapiente deleniti, adipisci culpa nostrum eaque, ab repellendus error
+                            laudantium dicta assumenda officia maxime! Et, reiciendis quos praesentium molestiae dolor
+                            cum
+                            aliquid animi quibusdam ipsam, facere explicabo corrupti natus, illo unde culpa molestias
+                            excepturi quia.</p>
+                    </div>
                 </div>
             </div>
-            <!-- right side -->
-            <div class="s5-1b">
-                <div class="s5-1b-1">
-                    <p>Ginger witch</p>
-                    <p> survives</p>
-                    <p> explosion</p>
+        </section>
+
+        <section id="section-5">
+            <div class="s5-1">
+                <!-- left side -->
+                <div class="s5-1a">
+                    <div class="s5-1a-1">
+                        <div>great Hall gets a makeover</div>
+                        <img src="./images/hall1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores dolorum iste asperiores
+                            accusamus, velit tempore expedita hic amet omnis. Perferendis minima illo quaerat adipisci
+                            voluptates quae ipsam, laudantium itaque provident, cum ab, eius unde nemo aut dolorum.
+                            Magni
+                            sunt sed ad quisquam pariatur dolore, nam sequi accusamus quasi placeat voluptate eos omnis
+                            eius
+                            aut explicabo provident illum dolorem. Doloremque optio eos eaque, enim cupiditate
+                            doloribus!
+                            Veritatis quidem doloribus, recusandae illo autem maiores optio dignissimos dicta provident
+                            voluptatum sapiente modi nobis itaque veniam repudiandae. Perferendis expedita ab officiis,
+                            non
+                            rem.</p>
+                    </div>
+                    <div class="s5-1a-2">
+                        <img src="./images/hall2.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maiores dolorum iste asperiores
+                            accusamus, velit tempore expedita hic amet omnis. Perferendis minima illo quaerat adipisci
+                            voluptates quae ipsam, laudantium itaque provident, cum ab, eius unde nemo aut dolorum.
+                            Magni
+                            sunt sed ad quisquam pariatur dolore, nam sequi accusamus quasi placeat voluptate eos omnis
+                            eius
+                            aut explicabo provident illum dolorem. Doloremque optio eos eaque, enim cupiditate
+                            doloribus!
+                            Veritatis quidem doloribus, recusandae illo autem maiores optio dignissimos dicta provident
+                            voluptatum sapiente modi nobis itaque veniam repudiandae. Perferendis expedita ab officiis,
+                            non
+                            rem.</p>
+                    </div>
                 </div>
-                <div class="s5-1b-2">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vero eveniet sequi fuga tempore
-                        officiis consectetur quisquam commodi repellat ut? Dolores tenetur fugit officia distinctio odit
-                        iusto hic, expedita voluptatem, aliquam, doloribus excepturi quam eaque a harum mollitia et
-                        earum culpa neque deserunt pariatur! Nihil ipsum iure facere blanditiis porro fugit rerum dicta,
-                        ullam maxime voluptates! Cupiditate, eligendi iste doloribus adipisci facere similique ex fugit
-                        provident id dignissimos excepturi ducimus, placeat fugiat debitis ipsam ipsum ratione!
-                        Accusantium, maiores? Distinctio sapiente vitae voluptate tempora atque temporibus architecto
-                        ipsum unde soluta maiores saepe cum, dolor, enim quas libero perferendis quam ratione deserunt
-                        eius nam voluptates vel. Quia a harum neque sint! Maiores quam consectetur dolores dolorem,
-                        ipsum optio vitae officiis odit laborum impedit, voluptatem quibusdam omnis rem voluptas
-                        veritatis ullam, iure reiciendis sit distinctio assumenda? Quaerat et eum ut reprehenderit fuga
-                        earum vitae. Veniam illum eum, vel accusamus cum quia facilis dolorem! Ut a velit ipsa, labore
-                        in, adipisci facilis recusandae similique placeat distinctio reiciendis porro id excepturi!
-                        Earum, quidem? Molestiae ut ipsam harum aliquam iusto, illo eius. Provident, ipsa magni
-                        similique nobis error deleniti facere reiciendis sapiente ad modi quaerat, beatae corrupti
-                        incidunt. Deleniti consequatur eveniet iure sed quaerat veritatis cum quia facilis dolorem!
+
+                <div class="s5-1b">
+                    <div class="s5-1b-1">
+                        <p>Ginger witch</p>
+                        <p> survives</p>
+                        <p> explosion</p>
+                    </div>
+                    <div class="s5-1b-2">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est vero eveniet sequi fuga
+                            tempore
+                            officiis consectetur quisquam commodi repellat ut? Dolores tenetur fugit officia distinctio
+                            odit
+                            iusto hic, expedita voluptatem, aliquam, doloribus excepturi quam eaque a harum mollitia et
+                            earum culpa neque deserunt pariatur! Nihil ipsum iure facere blanditiis porro fugit rerum
+                            dicta,
+                            ullam maxime voluptates! Cupiditate, eligendi iste doloribus adipisci facere similique ex
+                            fugit
+                            provident id dignissimos excepturi ducimus, placeat fugiat debitis ipsam ipsum ratione!
+                            Accusantium, maiores? Distinctio sapiente vitae voluptate tempora atque temporibus
+                            architecto
+                            ipsum unde soluta maiores saepe cum, dolor, enim quas libero perferendis quam ratione
+                            deserunt
+                            eius nam voluptates vel. Quia a harum neque sint! Maiores quam consectetur dolores dolorem,
+                            ipsum optio vitae officiis odit laborum impedit, voluptatem quibusdam omnis rem voluptas
+                            veritatis ullam, iure reiciendis sit distinctio assumenda? Quaerat et eum ut reprehenderit
+                            fuga
+                            earum vitae. Veniam illum eum, vel accusamus cum quia facilis dolorem! Ut a velit ipsa,
+                            labore
+                            in, adipisci facilis recusandae similique placeat distinctio reiciendis porro id excepturi!
+                            Earum, quidem? Molestiae ut ipsam harum aliquam iusto, illo eius. Provident, ipsa magni
+                            similique nobis error deleniti facere reiciendis sapiente ad modi quaerat, beatae corrupti
+                            incidunt. Deleniti consequatur eveniet iure sed quaerat veritatis cum quia facilis dolorem!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-6">
+            <div class="s6-1">
+                <div class="s6-1a">
+                    <p>muggle crosses line</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
+                        consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo
+                        quas?
+                        Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam
+                        ex
+                        vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span>
+                    </p>
+                </div>
+                <div class="s6-1b">
+                    <p>mystery cave turns 200</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
+                        consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo
+                        quas?
+                        Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam
+                        ex
+                        vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span>
+                    </p>
+                </div>
+                <div class="s6-1c">
+                    <p>three headed hog spotted</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
+                        consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo
+                        quas?
+                        Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam
+                        ex
+                        vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span>
+                    </p>
+                </div>
+                <div class="s6-1d">
+                    <p>london bans magic plant</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
+                        consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo
+                        quas?
+                        Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam
+                        ex
+                        vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span>
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- PART-4 ENDS*************** -->
+        </section>
 
-    <!-- PART-5******************** -->
-    <section id="section-6">
-        <div class="s6-1">
-            <div class="s6-1a">
-                <p>muggle crosses line</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
-                    consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo quas?
-                    Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam ex
-                    vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span></p>
+        <section id="section-7">
+            <div class="s7-1">
+                <div class="s7-1a">
+                    <p>exclusive</p>
+                    <p>gladrags special offers inside</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
+                <div class="s7-1b">
+                    <p>spells</p>
+                    <p>new spells invented in london</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
+                <div class="s7-1c">
+                    <p>potions</p>
+                    <p>forbidden potions found</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
+                <div class="s7-1d">
+                    <p>jobs</p>
+                    <p>aurors! more aurors required</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
+                <div class="s7-1e">
+                    <p>culture</p>
+                    <p>the west and the curse</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
+                <div class="s7-1f">
+                    <p>awards</p>
+                    <p>the golden wand awards</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
+                        repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+                </div>
             </div>
-            <div class="s6-1b">
-                <p>mystery cave turns 200</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
-                    consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo quas?
-                    Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam ex
-                    vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s6-1c">
-                <p>three headed hog spotted</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
-                    consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo quas?
-                    Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam ex
-                    vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s6-1d">
-                <p>london bans magic plant</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolorum pariatur quia laboriosam
-                    consequatur impedit aliquam eos sint possimus, adipisci, vel itaque porro nihil quidem illo quas?
-                    Commodi, quas. Distinctio eveniet vitae sed nam voluptates nesciunt, atque, consequatur magnam ex
-                    vero deserunt! Sapiente unde quia voluptatem officiis <span> <a href="#">...read more</a></span></p>
-            </div>
-        </div>
-    </section>
-    <!-- PART-5 ENDS*************** -->
+        </section>
+        <hr class="hr4">
 
-    <!-- PART-6******************** -->
-    <section id="section-7">
-        <div class="s7-1">
-            <div class="s7-1a">
-                <p>exclusive</p>
-                <p>gladrags special offers inside</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
+        <section id="section-8">
+            <div class="s8-1">
+                <p>✶ the wizard worlds beguiling broadsheet of choice ✶</p>
             </div>
-            <div class="s7-1b">
-                <p>spells</p>
-                <p>new spells invented in london</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s7-1c">
-                <p>potions</p>
-                <p>forbidden potions found</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s7-1d">
-                <p>jobs</p>
-                <p>aurors! more aurors required</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s7-1e">
-                <p>culture</p>
-                <p>the west and the curse</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
-            </div>
-            <div class="s7-1f">
-                <p>awards</p>
-                <p>the golden wand awards</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo tenetur magnam nostrum perferendis
-                    repellat quo aliquam neque facilis repudiandae.<span> <a href="#">...read more</a></span></p>
-            </div>
-        </div>
-    </section>
-    <hr class="hr4">
-    <!-- PART-6 ENDS*************** -->
-
-    <!-- PART-7 ENDS*************** -->
-    <section id="section-8">
-        <div class="s8-1">
-            <p>✶ the wizard worlds beguiling broadsheet of choice ✶</p>
-        </div>
-    </section>
-    <!-- PART-7 ENDS*************** -->
+        </section>
 
     </section>
- 
+
 
 
 

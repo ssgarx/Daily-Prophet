@@ -1,0 +1,40 @@
+.nav {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    ul {
+      text-align: center;
+      li {
+        display: inline-block;
+        line-height: 40px;
+        margin: 0 3px;
+        a {
+          font-family: "Roboto", sans-serif;
+          font-size: 0.8rem;
+          color: black;
+          padding: 2px 7px;
+          border-radius: 8%;
+          transition: 0.4s;
+        }
+        .active,
+        a:hover {
+          background-color: #f7f7f7;
+        }
+      }
+    }
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 10px #333;
+  }
+
+  @media (max-width: 1230px) {
+    .nav {
+      /* large nav tab dissapears from tablet mode*/
+      display: none;
+    }
+  }
