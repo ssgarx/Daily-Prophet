@@ -1,74 +1,3 @@
-// MAIN NAVBAR
-$(document).ready(function () {
-
-  // NAV SECTION
-  var w = $(window).width();
-  var w1 = w + 17;
-  console.log("zz"+ w1);
-  
-  if (w1 < 1230) {
-    var navPoints2 = $("#navbar2").offset().top;
-    $(window).scroll(function () {
-      stickyNav2();
-    });
-  } else {
-    console.log("wNot < 1230");
-    var navPoints = $("#navbar").offset().top;
-    $(window).scroll(function () {
-      stickyNav();
-    });
-  }
-  
-  $(window).resize(function(){
-    var x = $(window).width();
-    var x1 = x + 17;
-    console.log("yy"+ x1);
-    if (x1 < 1230) {
-      var navPoints2 = $("#navbar2").offset().top;
-      $(window).scroll(function () {
-        stickyNav2();
-      });
-    } else {
-      var navPoints = $("#navbar").offset().top;
-      console.log("xNot < 1230");
-      $(window).scroll(function () {
-        stickyNav();
-      });
-    }
-
-  });
-
-    function stickyNav() {
-      
-      var pagePoints = $(window).scrollTop();
-      if (pagePoints >= navPoints) {
-        $("#navbar").addClass("sticky")
-      } else {
-        $("#navbar").removeClass("sticky")
-      }
-    }
-    function stickyNav2() {
-      
-      var pagePoints2 = $(window).scrollTop();
-      if (pagePoints2 >= navPoints2) {
-        $("#navbar2").addClass("sticky2")
-      } else {
-        $("#navbar2").removeClass("sticky2")
-      }
-    }
-    // NAV SECTION ENDS
-
-    // DATE SECTION
-    var options = { weekday: 'long'};
-    var today = new Date();
-
-    var fullDate = today.getDate()+"/"+today.getMonth()+"/"+today.getFullYear();
-    var justDay =today.toLocaleDateString("en-US", options);
-    $(".fday").html(fullDate);
-    $(".jday").html(justDay);
-    // DATE SECTION ENDS
-});
-
 // SIDE NAV
 function openSideNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -77,3 +6,36 @@ function closeSideNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 // *****SIDE NAV ENDS*****
+
+//UPON SCROLL TRIGGER FUNCTION
+window.onscroll = function () {
+  addSticky();
+};
+
+//GET NAV1
+var nav1 = document.getElementById("navbar");
+var nav2 = document.getElementById("navbar2");
+
+//GET NAV1 & NAV2 OFFSET
+// var n1o = nav1.offsetTop; //124
+// var n2o = nav2.offsetTop; //66
+
+// console.log("n1o: "+n1o+" , "+"n2o: "+n2o);
+
+//APPLY STICKY
+function addSticky() {
+  var ss = window.innerWidth;
+  if (ss >= 1230) {
+    if (window.pageYOffset >= 124) {
+      nav1.classList.add("sticky");
+    } else {
+      nav1.classList.remove("sticky");
+    }
+  } else {
+    if (window.pageYOffset >= 66) {
+      nav2.classList.add("sticky2");
+    } else {
+      nav2.classList.remove("sticky2");
+    }
+  }
+}
